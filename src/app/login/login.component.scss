@@ -1,0 +1,13 @@
+.login,
+.image {
+  min-height: 100vh;
+}
+.bg-image {
+  background-image: url("../../assets/images/login_background.png");
+  background-size: cover;
+  background-position: center center;
+}
+.invalid-feedback
+{
+  margin-left: 25px;
+}
