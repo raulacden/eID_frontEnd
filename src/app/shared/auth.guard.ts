@@ -6,7 +6,7 @@ import {
   Router
 } from '@angular/router';
 import { Observable } from 'rxjs';
-import { AuthService } from '../shared/auth.service';
+import { AuthService } from './services/auth.service';
 
 @Injectable({
   providedIn: 'root'
@@ -20,7 +20,7 @@ export class AuthGuard implements CanActivate {
     state: RouterStateSnapshot
     ): Observable<boolean> | Promise<boolean> | boolean {
       if (this.authService.isLoggedIn !== true) {
-        window.alert('Access Denied, Login is Required to Access List of Clients!');
+        window.alert('Access Denied, login is required to access this resource!');
         this.router.navigate(['']);
       }
       return true;

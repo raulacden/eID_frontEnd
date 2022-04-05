@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SpinnerService } from './shared/services/spinner.service';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'eid-frontend';
-  constructor(){
+
+  loading$ = this.spinner.loading$;
+  constructor(public spinner: SpinnerService){
   
   }
 }

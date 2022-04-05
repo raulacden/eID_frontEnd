@@ -1,1 +1,47 @@
-<p>list works!</p>
+<div class="container-fluid h-100">
+    <div class="row h-100 bg-light" >
+        <div class="col-md-3 bg-image"></div>
+        <div class="col-md-9 my-auto">
+            <div class="container">
+                <table class="table align-middle mb-0 table-borderless ">
+                    <thead class="bg-light">
+                      <tr>
+                        <th>Photo</th>
+                        <th>User</th>
+                        <th>email</th>
+                        <th>Post</th>
+                        <th>Date</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let client of clientList" class="shadow-sm bg-body" (click)="openModal(client)">
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img
+                                src="https://mdbootstrap.com/img/new/avatars/8.jpg"
+                                alt=""
+                                style="width: 45px; height: 45px"
+                                class="rounded-circle"
+                                />
+                          </div>
+                        </td>
+                        <td> 
+                            <p class="fw-bold mb-1">{{client.name | initialsName}}</p>
+                        </td>
+                        <td>
+                            <p class="fw-normal mb-1" *ngIf= "currentRole != 'Administradores'">***************</p>
+                            <p class="fw-normal mb-1" *ngIf= "currentRole == 'Administradores'">{{client.email}}</p>
+                        </td>
+                        <td>
+                            <p class="fw-normal mb-1">{{client.posts.length}}</p>
+                        </td>
+                        <td>
+                            <p class="fw-normal mb-1">{{client.subject}}</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </div>
+        </div>
+    </div>
+</div>

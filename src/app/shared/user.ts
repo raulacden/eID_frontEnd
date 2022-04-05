@@ -1,4 +1,4 @@
 export class User {
     user!: String;
-    password!: String;
+    pass!: String;
   }

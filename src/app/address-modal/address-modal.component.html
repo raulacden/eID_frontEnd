@@ -1,0 +1,23 @@
+<div class="modal-header border-0"> 
+  <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss('Cross click')"></button>
+</div>
+<div class="modal-body">
+  <div class="border-bottom border-2 p-1">
+    <div class="border-bottom border-2">
+      <h5 class="pb-1 fw-bold">{{fromParent.name}}</h5> 
+    </div>
+    <div class="m-2">      
+      <p class="fw-bold pt-2">{{fromParent.streetA}}</p>
+      <p class="text-muted">{{fromParent.streetB}}</p>
+      <p class="text-muted">{{fromParent.streetC}}</p>
+      <p class="text-muted">{{fromParent.streetD}}</p>
+  </div>
+  </div>
+  <div class="border-bottom border-2 p-1">
+    <div class="m-2 ">
+      <p>City: {{fromParent.city}}</p>
+      <p>State: {{fromParent.state}}</p>
+      <p>Country: {{fromParent.country}}</p>
+  </div>
+  </div>
+</div>
