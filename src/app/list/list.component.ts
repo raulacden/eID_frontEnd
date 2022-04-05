@@ -3,7 +3,7 @@ import { map} from 'rxjs/operators'
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 
 import { ApiService } from '../shared/services/api.service';
-import { Client } from '../shared/client';
+import { Client } from '../shared/client.model';
 import { AuthService } from '../shared/services/auth.service';
 
 import {AddressModalComponent} from '../address-modal/address-modal.component';

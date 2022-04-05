@@ -5,9 +5,9 @@ import {
 } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { retry, catchError } from 'rxjs/operators';
-import { User } from '../user';
-import { Client } from '../client';
-import { ClientDetail } from '../clientDetail';
+import { User } from '../user.model';
+import { Client } from '../client.model';
+import { ClientDetail } from '../clientDetail.model';
 
 @Injectable({
   providedIn: 'root'

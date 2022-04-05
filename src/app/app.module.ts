@@ -4,6 +4,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 
+import { StoreModule } from '@ngrx/store';
+import { reducer } from './store/reducer';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -35,6 +37,7 @@ import { AddressModalComponent } from './address-modal/address-modal.component';
     AppRoutingModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
+    StoreModule.forRoot({users: reducer}),
   ],
   providers: [
     AuthService,
