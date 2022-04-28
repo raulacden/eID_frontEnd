@@ -21,14 +21,11 @@ v14.17.6`
 `npm i json-server -g`
 
 
-
 #  Instrucciones
 
 Con el comando `json-server --watch db.json` se despliega una fake API que se puede ver en `localhost:3000` donde servirá el archivo "db.json".
 
 Se requiere hacer una aplicación en Angular que conste de un login, una vista de clientes y una vista de detalle de cliente.
-
-[Aquí encontrarás el diseño](https://www.figma.com/file/QhgOgLjfOwXbqwVGOvGs3L/List?node-id=3%3A596)
 
 ### Login 
 Es un simple formulario donde habrá dos inputs: un user y una password que tendrá que contener 6 dígitos y al menos una mayúscula, y un botón de Login.
@@ -47,25 +44,3 @@ Y se mostrará los siguientes datos:
 El email solo lo podrán ver los Administradores, pero nuestro login siempre devolverá el rol de "User".
 
 Al clickar en un cliente se nos desplegará una modal con la información de la dirección del cliente (address). Este componente tiene que ser un componente "tonto" donde que no lea ni del store ni de servicios.
-
-#  Sugerencias
-- Aunque la prueba se califica con 100 puntos, es posible que aprobar no sea suficiente. Dependerá del puesto que esté solicitando. Un 50% se considera Junior, ~ 70% se considera Intermedio, ~ 85% se considera Senior.
-
-#  Requisitos
-
-* Formulario (5)
-* Creación de servicios (5)
-* Implementa al menos un componente tonto o de presentación que no hace uso de los servicios ni del store(5)
-* Hace uso de directivas estructurales (es decir, ngIf...) para formar el DOM (5)
-* Hace uso de directivas de comunicación (es decir, Input...) para formar el DOM (5)
-* Hace uso de pipes mostrar los datos correctamente (5)
-* Interceptor (5)
-* Guarda de ruta (5)
-* Implementa mixins y variables de scss (5)
-* Implementa correctamente reductores (5)
-* Implementa correctamente acciones (5)
-* Implementa al menos un efecto (effect) (5)
-* Implementa por lo menos dos test (10)
-* Uso correcto de typescript (10)
-* Maquetación y html (10)
-* Usa Ngrx para el trabajo de observables(10)
